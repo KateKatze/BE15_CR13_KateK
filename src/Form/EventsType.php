@@ -47,7 +47,7 @@ class EventsType extends AbstractType
           ])
           ->add('eventtype', ChoiceType::class, [
               'choices' => ['Sport' => 'Sport', 'Theatre' => 'Theatre', 'Movie' => 'Movie', 'Music' => 'Music'],
-              'attr' => ['class' => 'form-control', 'style' => 'margin-bottom:15px']
+              'attr' => ['class' => 'form-select', 'style' => 'margin-bottom:15px']
           ])
           ->add('save', SubmitType::class, [
               'label' => 'Create event',
