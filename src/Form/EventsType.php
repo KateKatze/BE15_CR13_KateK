@@ -22,7 +22,7 @@ class EventsType extends AbstractType
               'attr' => ['class' => 'form-control', 'style' => 'margin-bottom:15px']
           ])
           ->add('time', DateTimeType::class, [
-              'attr' => ['style' => 'margin-bottom:15px']
+              'attr' => ['style' => 'margin-bottom:15px; margin: 10px; padding: 10px;']
           ])
           ->add('description', TextType::class, [
             'attr' => ['class' => 'form-control', 'style' => 'margin-bottom:15px']
@@ -51,7 +51,7 @@ class EventsType extends AbstractType
           ])
           ->add('save', SubmitType::class, [
               'label' => 'Create event',
-              'attr' => ['class' => 'btn-primary', 'style' => 'margin-bottom:15px']
+              'attr' => ['class' => 'btn btn-primary mt-3', 'style' => 'margin-bottom:15px']
           ]);
   }
 
